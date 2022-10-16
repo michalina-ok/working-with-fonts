@@ -1,0 +1,279 @@
+/* IMPORTING FROM GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&family=Space+Mono&family=Staatliches&display=swap');
+
+/* Resetter */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/* Color Properties */
+:root {
+  --color-darker: rgb(48, 48, 48);
+  --color-dark: rgb(64, 64, 64);
+  --color-light: rgb(194, 194, 194);
+  --color-lighter: rgb(255, 255, 255);
+  --big-font: 'Abril Fatface', cursive;
+  --small-font: 'Lato', sans-serif;
+  /* you could add an accent color for CTAs and anchor tags ;-) */
+}
+
+
+
+/* Fonts */
+/* MOBILE-FIRST */
+
+html {
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  color: var(--color-darker);
+  font-family: var(--big-font);
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+h1 {
+font-size: 3rem;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+h2 {
+  font-size: 3rem;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+
+p{
+  color: var(--color-dark);
+  font-family: var(--small-font);
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+
+/* UI Elements */
+button {
+  display: inline-block;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-darker);
+  color: var(--color-lighter);
+  margin: 10px;
+  border-radius: 6px;
+}
+
+.light_button {
+  background-color: var(--color-lighter);
+  color: var(--color-darker);
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 250px;
+  height: 2rem;
+  padding: 0.5rem;
+  text-align: left;
+  background-color: var(--color-lighter);
+  border-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--small-font);
+  margin-bottom: 20px;
+}
+
+/* Menu */
+nav{
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-darker);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-dark);
+}
+
+.header_text {
+  width: 40vw;
+  min-width: 300px;
+}
+
+.header_text h1 {
+  color: var(--color-lighter);
+}
+
+.header_text p {
+  color: var(--color-light);
+  font-size: 1.44rem;
+}
+
+.header_graphics {
+  width: 35vw;
+  height: 35vw;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: var(--color-darker);
+  margin-bottom: 40px;
+}
+
+/* Sections */
+#intro {
+  display: flex;
+  min-height: 80vh;
+  padding: 0px 15rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-light);
+}
+
+.intro_text {
+  width: 40vw;
+  min-width: 450px;
+}
+
+.intro_graphics {
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: var(--color-dark);
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 3px 7px 0 rgba(0,0,0,0.22);
+  padding: 2rem;
+  border-radius: 8px;
+  width: 200px;
+  
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+
+#cards {
+  min-height: 80vh;
+  padding: 5rem 2rem;
+}
+
+#cards p {
+  font-size: 1.44rem;
+}
+#card_container {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+}
+
+#card_container p {
+  font-size: 1rem;
+}
+
+#info {
+  display: flex;
+  min-height: 80vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light);
+}
+
+#info p {
+  font-size: 1.44rem;
+}
+
+.info_text {
+  width: 60vw;
+  min-width: 300px;
+}
+
+.info_text button {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+#contact {
+  display: flex;
+  min-height: 80vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 5vh 2rem;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--color-darker);
+}
+
+footer h2, footer h3{
+  color: var(--color-lighter);
+}
+
+footer a {
+  color: var(--color-light);
+}
+
+footer section {
+  display: flex;
+  max-width: 50vw;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer section div {
+  margin: 0px 1rem 1rem 1rem;
+}
+
+
+
+
+/* desktop */
+
+@media only screen and (min-width: 768px) {
+
+  section#intro {
+    padding: 0;
+   
+  }
+
+  .card {
+    min-width: 200px;
+  }
+
+}
